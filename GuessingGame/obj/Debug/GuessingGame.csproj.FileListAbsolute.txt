@@ -1,0 +1,11 @@
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\bin\Debug\GuessingGame.exe.config
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\bin\Debug\GuessingGame.exe
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\bin\Debug\GuessingGame.pdb
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.csprojResolveAssemblyReference.cache
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.Properties.Resources.resources
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.csproj.GenerateResource.Cache
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.exe
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.pdb
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.Goodbye.resources
+c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.Splash.resources
+C:\Users\Duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.CapitolGuesser.resources
