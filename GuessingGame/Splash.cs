@@ -1,7 +1,7 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	Project:	    Project 1
-//	File Name:		Capitol Guesser.cs
+//	Project:	    Project 5
+//	File Name:		Splash.cs
 //	Description:    A quiz game for guessing state capitol matching
 //	Course:			CSCI 2210-001 - Data Structures
 //	Author:			Duncan Perkins, perkinsdt@goldmail.etsu.edu, Department of Computing, East Tennessee State University
@@ -21,20 +21,33 @@ using System.Windows.Forms;
 
 namespace GuessingGame
 {
+    /// <summary>
+    /// Class for displaying the splash screen before entering program
+    /// </summary>
     public partial class Splash : Form
     {
+        /// <summary>
+        /// Default constructor for splash screen
+        /// </summary>
         public Splash()
         {
             InitializeComponent();
-            LoadMain.Start();
+            this.BackgroundImage = Properties.Resources.us;
         }
 
-        private void LoadMain_Tick(object sender, EventArgs e)
+        /// <summary>
+        /// Event for timer tick for Splashscreen class
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Countdown_Tick(object sender, EventArgs e)
         {
             Form Main = new CapitolGuesser();
             this.Hide();
             Main.Show();
-            LoadMain.Stop();
+            Countdown.Stop();
         }
+
+
     }
 }

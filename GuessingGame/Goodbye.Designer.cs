@@ -9,8 +9,11 @@
 //	Copyright:		Duncan Perkins, 2015
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-3namespace GuessingGame
+namespace GuessingGame
 {
+    /// <summary>
+    /// Form for thanking the user 
+    /// </summary>
     partial class Goodbye
     {
         /// <summary>
@@ -39,6 +42,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Goodbye));
             this.label1 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -70,7 +74,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // Goodbye
             // 
@@ -80,6 +84,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Goodbye";
             this.Text = "Goodbye";
             this.ResumeLayout(false);

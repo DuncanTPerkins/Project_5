@@ -34,6 +34,9 @@ namespace GuessingGame
         //List containing just the names of the states 
         List<string> StateNames = new List<string>();
 
+        //List containing just the names of the cities
+        List<string> CityNames = new List<string>();
+
         //String reader for use with the text document
         StringReader reader = new StringReader(Properties.Resources.states);
 
@@ -74,11 +77,11 @@ namespace GuessingGame
             {
                 MessageBox.Show(e.ToString());
             }
-            
+
             //Bind GUI listbox to values from SortedDictionary class
-            CityList.DataSource = new BindingSource(CapitalCities, null);
-            CityList.DisplayMember = "Value";
-            CityList.ValueMember = "Key";
+            CityNames = CapitalCities.Values.ToList<string>();
+            CityNames.Sort();
+            CityList.DataSource = new BindingSource(CityNames, null);
 
             //initialize first quiz question
             lblQuestion.Text = "What is the capital of " + StateNames[r.Next(0, StateNames.Count - 1)] + "?";
@@ -126,7 +129,7 @@ namespace GuessingGame
                 txtAttempts.Text = m.ToString();
                 btnChoose.Enabled = false;
             }
-            else if(TimeLeft > 0)
+            else if (TimeLeft > 0)
             {
                 TimeLeft--;
             }
@@ -146,7 +149,7 @@ namespace GuessingGame
             btnChoose.Enabled = false;
             string value = CityList.GetItemText(CityList.SelectedItem);
             value = value.Trim();
-            string key = lblQuestion.Text.Substring(23, lblQuestion.Text.Substring(23).Length-1);
+            string key = lblQuestion.Text.Substring(23, lblQuestion.Text.Substring(23).Length - 1);
 
             //if the guess was correct
             if (CapitalCities[key] == value)
@@ -182,7 +185,7 @@ namespace GuessingGame
             double percent = Double.Parse(txtCorrect.Text) / Double.Parse(txtAttempts.Text);
             if (percent == 0)
             {
-                txtPercent.Text = "N/A";
+                txtPercent.Text = "0";
             }
             else
             {
@@ -200,7 +203,7 @@ namespace GuessingGame
             double percent = Double.Parse(txtCorrect.Text) / Double.Parse(txtAttempts.Text);
             if (percent == 0)
             {
-                txtPercent.Text = "N/A";
+                txtPercent.Text = "0";
             }
             else
             {
@@ -219,12 +222,13 @@ namespace GuessingGame
             form.Show();
         }
 
-            /// <summary>
-            /// Overridden OnClosing event to provide a goodbye dialog
-            /// </summary>
-            /// <param name="e"></param>
-            protected override void OnClosing(CancelEventArgs e) { 
-                e.Cancel = true;
+        /// <summary>
+        /// Overridden OnClosing event to provide a goodbye dialog
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            e.Cancel = true;
             Form form = new Goodbye(txtPercent.Text, txtAttempts.Text);
             form.Show();
         }

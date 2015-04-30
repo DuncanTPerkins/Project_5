@@ -21,15 +21,28 @@ using System.Windows.Forms;
 
 namespace GuessingGame
 {
+    /// <summary>
+    /// Form for thanking the user for using the application
+    /// </summary>
     public partial class Goodbye : Form
     {
+        /// <summary>
+        /// parameterized constructor for Goodbye screen
+        /// </summary>
+        /// <param name="percent"></param>
+        /// <param name="attempts"></param>
         public Goodbye(string percent, string attempts)
         {
             InitializeComponent();
             lblScore.Text = "Your score was " + percent + " on " + attempts + " attempts.";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Click event for OK button on goodbye GUI 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OKButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CapitolGuesser));
             this.lblQuestion = new System.Windows.Forms.Label();
             this.CityList = new System.Windows.Forms.ListBox();
             this.txtAttempts = new System.Windows.Forms.TextBox();
@@ -47,8 +48,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPercent = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQuestion
@@ -139,7 +142,7 @@
             this.lblTimeRemaining.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTimeRemaining.AutoSize = true;
             this.lblTimeRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeRemaining.Location = new System.Drawing.Point(249, 172);
+            this.lblTimeRemaining.Location = new System.Drawing.Point(165, 8);
             this.lblTimeRemaining.Name = "lblTimeRemaining";
             this.lblTimeRemaining.Size = new System.Drawing.Size(29, 20);
             this.lblTimeRemaining.TabIndex = 8;
@@ -225,20 +228,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(101, 172);
+            this.label3.Location = new System.Drawing.Point(6, 8);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "Time Remaining:";
             // 
-            // CapitalGuesser
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.lblTimeRemaining);
+            this.groupBox3.Location = new System.Drawing.Point(70, 175);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 30);
+            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabStop = false;
+            // 
+            // CapitolGuesser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 302);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.lblTimeRemaining);
             this.Controls.Add(this.lblwrong);
             this.Controls.Add(this.lblright);
             this.Controls.Add(this.groupBox1);
@@ -246,11 +258,14 @@
             this.Controls.Add(this.btnEnd);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.CityList);
-            this.Name = "CapitalGuesser";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "CapitolGuesser";
             this.Text = "Capital Guesser";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,6 +291,7 @@
         private System.Windows.Forms.TextBox txtPercent;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

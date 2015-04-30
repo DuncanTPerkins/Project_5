@@ -93,5 +93,15 @@ namespace GuessingGame.Properties {
                 return ResourceManager.GetString("states", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap us {
+            get {
+                object obj = ResourceManager.GetObject("us", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
