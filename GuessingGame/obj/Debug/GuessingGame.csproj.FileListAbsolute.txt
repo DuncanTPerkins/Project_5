@@ -9,3 +9,14 @@ c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\
 c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.Goodbye.resources
 c:\users\duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.Splash.resources
 C:\Users\Duncan\documents\visual studio 2013\Projects\GuessingGame\GuessingGame\obj\Debug\GuessingGame.CapitolGuesser.resources
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\bin\Debug\GuessingGame.exe.config
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.exe
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.pdb
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\bin\Debug\GuessingGame.exe
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\bin\Debug\GuessingGame.pdb
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.csprojResolveAssemblyReference.cache
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.CapitolGuesser.resources
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.Goodbye.resources
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.Properties.Resources.resources
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.Splash.resources
+C:\Users\Duncan\Documents\GitHub\Project_5\GuessingGame\obj\Debug\GuessingGame.csproj.GenerateResource.Cache

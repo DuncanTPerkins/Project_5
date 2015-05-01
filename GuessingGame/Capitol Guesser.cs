@@ -59,6 +59,8 @@ namespace GuessingGame
         public CapitolGuesser()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //Read cities and states from file 
             try
             {
@@ -219,6 +221,7 @@ namespace GuessingGame
         private void btnEnd_Click(object sender, EventArgs e)
         {
             Form form = new Goodbye(txtPercent.Text, txtAttempts.Text);
+            form.StartPosition = FormStartPosition.CenterParent;
             form.Show();
         }
 
@@ -230,6 +233,7 @@ namespace GuessingGame
         {
             e.Cancel = true;
             Form form = new Goodbye(txtPercent.Text, txtAttempts.Text);
+            form.StartPosition = FormStartPosition.CenterParent;
             form.Show();
         }
     }

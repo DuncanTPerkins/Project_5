@@ -70,7 +70,7 @@
             this.CityList.FormattingEnabled = true;
             this.CityList.Location = new System.Drawing.Point(321, 9);
             this.CityList.Name = "CityList";
-            this.CityList.Size = new System.Drawing.Size(160, 251);
+            this.CityList.Size = new System.Drawing.Size(160, 238);
             this.CityList.TabIndex = 1;
             // 
             // txtAttempts
@@ -113,7 +113,7 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(16, 263);
+            this.btnNext.Location = new System.Drawing.Point(18, 263);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(86, 23);
             this.btnNext.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             // btnEnd
             // 
-            this.btnEnd.Location = new System.Drawing.Point(153, 263);
+            this.btnEnd.Location = new System.Drawing.Point(237, 263);
             this.btnEnd.Name = "btnEnd";
             this.btnEnd.Size = new System.Drawing.Size(75, 23);
             this.btnEnd.TabIndex = 7;
@@ -150,7 +150,7 @@
             // 
             // btnChoose
             // 
-            this.btnChoose.Location = new System.Drawing.Point(365, 267);
+            this.btnChoose.Location = new System.Drawing.Point(364, 263);
             this.btnChoose.Name = "btnChoose";
             this.btnChoose.Size = new System.Drawing.Size(75, 23);
             this.btnChoose.TabIndex = 9;

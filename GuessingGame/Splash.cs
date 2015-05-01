@@ -32,6 +32,8 @@ namespace GuessingGame
         public Splash()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.BackgroundImage = Properties.Resources.us;
         }
 

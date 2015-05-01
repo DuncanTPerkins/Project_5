@@ -34,6 +34,12 @@ namespace GuessingGame
         public Goodbye(string percent, string attempts)
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.CenterToParent();
+            if (percent == "0")
+            {
+                percent = "0%";
+            }
             lblScore.Text = "Your score was " + percent + " on " + attempts + " attempts.";
         }
 
